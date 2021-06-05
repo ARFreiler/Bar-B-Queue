@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS barbqueue_db;
+CREATE DATABASE barbqueue_db;
