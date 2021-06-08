@@ -21,7 +21,7 @@ Event.init(
         },
         theme: {
             type: DataTypes.STRING,
-            allowNull: true,
+            allowNull: false,
         },
     },
     {
