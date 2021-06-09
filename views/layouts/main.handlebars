@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bar-B-Queue</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+     
+      <div class="jumbotron">
+        <h1 class="text-center"><span class="fa fa-fire"></span><span class="fa fa-fire"></span><span class="fa fa-fire"></span> Bar-B-Queue<span class="fa fa-fire"></span><span class="fa fa-fire"></span><span class="fa fa-fire"></span></h1>
+        <hr>
+        <h2 class="text-center">Welcome to Bar-B-Queue!</h2>
+        <br>
+        <div class="text-center">
+           <!-- Conditionally render login or logout links -->
+           {{#if logged_in}}
+           <a href="/profile">profile</a> |
+           <button class="no-button" id="logout">logout</button>
+           {{else}}
+           <a href="/login">login</a>
+           {{/if}}
+
+        </div>
+  
+      </div>
+  
+  </body>
+  </html>
