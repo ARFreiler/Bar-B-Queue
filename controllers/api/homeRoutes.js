@@ -5,4 +5,25 @@ router.get('/', async (req, res) => {
     res.render('home');
 });
 
+router.get('/login', (req, res) => {
+    console.log(req.session);
+    // if (req.session.logged_in) {
+    //     res.redirect('/');
+    //     return;
+    // }
+
+    res.render('login');
+});
+
+router.get('/profile', (req, res) => {
+    console.log(req.session);
+    // if (req.session.logged_in) {
+    //     res.redirect('/');
+    //     return;
+    // }
+
+    res.render('profile');
+});
+
+
 module.exports = router;
