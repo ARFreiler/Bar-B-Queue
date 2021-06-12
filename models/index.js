@@ -3,7 +3,8 @@ const Create = require('./Create');
 const Event = require('./Event');
 
 User.hasMany(Event, {
-    foreignKey: 'user_id',
+    foreignKey: 'user_id', 
+    onDelete: 'CASCADE'
 });
 
 Create.belongsTo(User, {
