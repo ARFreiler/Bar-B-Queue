@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Hot & Spicy",
+      "description": "Come out and enjoy some nice hot & spicy flavored bbq.",
+      "location": "park near you!"
+    },
+    {
+      "name": "TexMex",
+      "description": "A TexMex themed bbq with a lot of delicious food!",
+      "location": "comcast roof top square"
+    },
+    {
+      "name": "Where's da Meat",
+      "description": "battle of the brisket bbq challenge.",
+      "location": "on the parkway"
+    }
+  ]
