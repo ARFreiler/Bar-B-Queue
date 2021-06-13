@@ -1,50 +1,24 @@
-{{! <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Bar-B-Queue</title>
-
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<body> }}
-
-<div class="container">
-
-  <div class="jumbotron">
-    <h1 class="text-center"><span class="fa fa-fire"></span><span
-        class="fa fa-fire"
-      ></span><span class="fa fa-fire"></span>
-      Bar-B-Queue<span class="fa fa-fire"></span><span
-        class="fa fa-fire"
-      ></span><span class="fa fa-fire"></span></h1>
-    <hr />
-    <h2 class="text-center">Welcome to Bar-B-Queue! Book your event and let the
-      fun begin!</h2>
-    <br />
-    <div class="text-center">
-      <a href="/tables"><button class="btn btn-lg btn-primary"><span
-            class="fa fa-list-alt"
-          ></span>
-          View Events</button></a>
-      <a href="/reserve"><button class="btn btn-lg btn-danger"><span
-            class="fa fa-credit-card"
-          ></span>
-          New Event</button></a>
-
-    </div>
-
+<!-- Loop over each object in the projects array -->
+{{#each events as |event| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{!-- {{{get_emoji}}} --}}
+      <a href="/project/{{event.id}}">{{event.name}}</a>
+    </h2>
+    <p>
+      <span for="img" aria-label="location"></span>
+      <!-- Pass needed_funding value to the helper function -->
+      <span class="dollar-amount">{{format_amount event.location}}</span>
+      
+    </p>
+    <p>Created by {{event.user.name}} on {{format_date event.date_created}}</p>
   </div>
-
-  <footer class="footer">
-    <div class="container">
-      <!-- <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a> -->
-    </div>
-  </footer>
-
+  <div class="col-md-7">
+    <p>
+      {{event.description}}
+    </p>
+  </div>
 </div>
-
-{{! </body>
-  </html> }}
+{{/each}}
