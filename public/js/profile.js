@@ -1,14 +1,14 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
 
-    const name = document.querySelector('#event-name').nodeValue.trim();
-    const location = document.querySelector('#event-location').nodeValue.trim();
-    const description = document.querySelector('#event-desc').nodeValue.trim();
+    const name = document.querySelector('#event-name').value.trim();
+    const location = document.querySelector('#event-location').value.trim();
+    const description = document.querySelector('#event-desc').value.trim();
 
     if (name && location && description) {
-        const response = await fetch('/api/events', {
+        const response = await fetch(`/api/events`, {
             method: 'POST',
-            body: JSON.stringify({name, location, description}),
+            body: JSON.stringify({ name, location, description }),
             headers: {
                 'Content-Type': 'application/json',
             },
