@@ -12,19 +12,37 @@
 
 [Links](#links)
 
+[Future Development](#futuredevelopment)
+
 [Authors](#authors)
 
 [License](#license)
 
 ## Description
 
+This application allows users to create a user profile from which they can login and create social events. Users can name the event, give it's location, and any other pertinent details. These events can be updated and deleted as necessary.
+
 ## Installation
+
+Run _node server.js_ in the command line.
 
 ## Credits
 
 [MDN Documents](https://developer.mozilla.org/en-US/docs/Learn)
 
+Penn instructional staff: Anthony Briglia and Tom Woods.
+
 ## Links
+
+[Repo](https://github.com/ARFreiler/Bar-B-Queue)
+
+[Heroku](https://dashboard.heroku.com/apps/bar-b-queue)
+
+[Video](https://drive.google.com/file/d/1Q9JHDz63LldhhnOxmuTN1YZIfWmd89g9/view)
+
+## Future Development
+
+There are several features we would still like to add to this application to allow more versatility. The ability to allow users to join and contribute to other scheduled events. The incorporation of food themed API's to allow users to research food dishes to bring to the event. Add the Google Map API to provide location details and directions to the event. Also would like to perform a majoe overhaul of the UX for a more asthetically pleasing and user friendly experience.
 
 ## Authors
 
