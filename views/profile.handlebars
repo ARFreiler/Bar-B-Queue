@@ -10,16 +10,30 @@
 
     <form class="form new-event-form">
       <div class="form-group">
-        <label for="event-name">event name:</label>
-        <input class="form-input" type="text" id="event-name" name="event-name" />
+        <label for="event-name">Event name:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="event-name"
+          name="event-name"
+        />
       </div>
       <div class="form-group">
-        <label for="event-location">event location:</label>
-        <input class="form-input" type="text" id="event-location" name="event-location" />
+        <label for="event-location">Event location:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="event-location"
+          name="event-location"
+        />
       </div>
       <div class="form-group">
-        <label for="event-desc">description:</label>
-        <textarea class="form-input" id="event-desc" name="event-desc"></textarea>
+        <label for="event-desc">Description:</label>
+        <textarea
+          class="form-input"
+          id="event-desc"
+          name="event-desc"
+        ></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
@@ -28,23 +42,26 @@
   </div>
 
   <div class="col-md-6 event-list">
-  {{#if events.length}}
- 
-    <h3>Current Events:</h3>
+    {{#if events.length}}
 
-    {{#each events as |event|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/project/{{event.id}}">{{event.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{event.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
+      <h3>Current Events:</h3>
+
+      {{#each events as |event|}}
+        <div class="row mb-2">
+          <div class="col-md-8">
+            <h4><a href="/project/{{event.id}}">{{event.name}}</a></h4>
+          </div>
+          <div class="col-md-4">
+            <button
+              class="btn btn-sm btn-danger"
+              data-id="{{event.id}}"
+            >DELETE</button>
+          </div>
+        </div>
+      {{/each}}
     {{/if}}
   </div>
-  
+
 </div>
 
 <script src="/js/profile.js"></script>
