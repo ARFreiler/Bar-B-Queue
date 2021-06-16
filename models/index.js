@@ -1,5 +1,5 @@
 const User = require('./User');
-const Create = require('./Create');
+// const Create = require('./Create');
 const Event = require('./Event');
 
 User.hasMany(Event, {
@@ -7,8 +7,8 @@ User.hasMany(Event, {
     onDelete: 'CASCADE'
 });
 
-Create.belongsTo(User, {
+Event.belongsTo(User, {
     foreignKey: 'user_id',
 });
 
-module.exports = { User, Event, Create };
+module.exports = { User, Event };

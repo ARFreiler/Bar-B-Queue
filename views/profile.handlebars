@@ -27,8 +27,9 @@
     </form>
   </div>
 
-  {{#if events.length}}
   <div class="col-md-6 event-list">
+  {{#if events.length}}
+ 
     <h3>Current Events:</h3>
 
     {{#each events as |event|}}
@@ -41,8 +42,9 @@
       </div>
     </div>
     {{/each}}
+    {{/if}}
   </div>
-  {{/if}}
+  
 </div>
 
 <script src="/js/profile.js"></script>
