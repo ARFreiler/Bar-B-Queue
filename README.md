@@ -17,6 +17,11 @@
 [License](#license)
 
 ## Description
+![image](https://user-images.githubusercontent.com/79174643/122154088-3783c000-ce32-11eb-9417-71206b875ddf.png)
+
+![image](https://user-images.githubusercontent.com/79174643/122154207-7154c680-ce32-11eb-8857-f5c7df633e78.png)
+
+![image](https://user-images.githubusercontent.com/79174643/122154277-a06b3800-ce32-11eb-8939-15c24ba2b565.png)
 
 ## Installation
 
